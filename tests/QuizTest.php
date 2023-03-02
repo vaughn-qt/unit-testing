@@ -1,11 +1,11 @@
 <?php
 
-namespace tests;
+namespace Tests;
 
 
-use PHPUnit\Framework\TestCase;
-use App\Quiz;
 use App\Question;
+use App\Quiz;
+use PHPUnit\Framework\TestCase;
 
 
 class QuizTest extends TestCase
@@ -16,7 +16,6 @@ class QuizTest extends TestCase
     public function it_consists_of_questions()
     {
         $quiz = new Quiz();
-
 
         $quiz->addQuestion(new Question("What is 2+2",4));
 

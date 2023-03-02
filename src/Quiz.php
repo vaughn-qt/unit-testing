@@ -26,8 +26,6 @@ class Quiz
     {
         $correct = count($this->correctAnswers());
 
-        $total = count($this->questions);
-
         return ($correct / count($this->questions)) * 100;
     }
 
